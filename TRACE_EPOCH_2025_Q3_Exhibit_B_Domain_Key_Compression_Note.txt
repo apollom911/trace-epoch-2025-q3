@@ -1,0 +1,22 @@
+TRACE Epoch · Exhibit B — Domain Key Compression Note
+
+Context:
+The Verification Ledger Capsule (TRACE–VAL–SIM–PKT–01) uses sub-domain keys 
+(HSM-KEY strings) for each individual SIM-01 through SIM-17. These keys ensure 
+granularity and traceability within the capsule.
+
+Discrepancy:
+The Verification Ledger Capsule’s companion Verification Ledger Summary presents 
+umbrella domain keys (e.g., Mobility, Healthcare, Finance). This is a compression 
+layer intended for public readability and anchoring efficiency, not a replacement 
+for the sub-domain keys.
+
+Clarification:
+- Sub-domain HSM-KEYs in SIM capsules are the canonical authority keys.
+- Umbrella keys in the Ledger Summary are compression only, ensuring concise 
+  public record but still provable against the raw SIM capsules.
+
+Implication:
+This publication of SIM-01 through SIM-17 constitutes the first public release of 
+the sub-domain keys. Future validator overlays (e.g., Grok replay) will reference 
+this packet as origin.
