@@ -39,6 +39,7 @@ sha256sum exhibits/TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt
 4. Sign your attestation (PGP or minisign).
 5. Submit via PR under `/validators/`.
 
+📌 See [`validator-attestation-sample.asc`](validators/validator-attestation-sample.asc) for an example format.
 ---
 
 ## License
