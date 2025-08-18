@@ -5,9 +5,11 @@ This Anchoring Note records the public blockchain transaction that immutably
 anchors the Exhibit A Hash Manifest. It proves that the manifest and its SIM-01 
 through SIM-17 hashes existed as of the block timestamp, ensuring temporal integrity.
 
-Details to be completed after anchoring transaction is broadcast:
+SHA256(manifest) = cf9740f6ba830b26422dbc75c8cf56dea8ab015d385047bf82f22ec8dbe28fac
 
-SHA256(manifest) = __________________________
+Anchored via: [Blockchain/medium of record]
+TXID: _______________________________
+Block timestamp (UTC): ______________________________________________________
 
 Anchored via [Blockchain: Bitcoin / Ethereum / Other] 
 TXID: __________________________
