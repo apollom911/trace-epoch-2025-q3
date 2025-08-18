@@ -1,0 +1,19 @@
+name: manifest-hash
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'exhibits/TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt'
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compute SHA256 of Exhibit A
+        run: |
+          set -e
+          FILE="exhibits/TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt"
+          echo "File: $FILE"
+          sha256sum "$FILE" | tee manifest.sha256
+          HASH=$(sha256sum "$FILE" | awk '{print $1}')
+          echo "::notice title=SHA256(manifest)::${HASH}"
