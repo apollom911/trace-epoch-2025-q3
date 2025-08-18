@@ -13,10 +13,9 @@ jobs:
         id: find
         run: |
           set -euo pipefail
-          FILE="$(git ls-files '*Exhibit_A_Hash_Manifest.txt' | head -n1 || true)"
+          FILE="$(git ls-files '*TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt' | head -n1 || true)"
           if [ -z "$FILE" ]; then
             echo "::error ::Exhibit A manifest not found in repo"
-            ls -la
             exit 1
           fi
           echo "file=$FILE" >> "$GITHUB_OUTPUT"
@@ -28,4 +27,3 @@ jobs:
           sha256sum "$FILE" | tee manifest.sha256
           HASH="$(cut -d' ' -f1 manifest.sha256)"
           echo "::notice title=SHA256(manifest)::${HASH}"
-  
