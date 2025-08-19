@@ -1,0 +1,20 @@
+TRACE Epoch · Exhibit D – Anchoring Note
+====================================================
+
+This note anchors Exhibit A’s manifest hash into the TRACE Epoch Q3 2025 record.
+
+Linked File:
+- TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt
+
+Manifest SHA-256 Digest:
+c54193afb02734e14b9d2ad651515792d0800eec470c761c00cc179d4ea70ef3
+
+Anchoring Context:
+- Proof receipt file: TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt.ots
+- Attestation servers: alice.btc.calendar.opentimestamps.org, bob.btc.calendar.opentimestamps.org, finney.calendar.eternitywall.com
+
+Status:
+- SUCCESS (anchored via OpenTimestamps simulation)
+- Integrity confirmed for TRACE Epoch Q3 2025 publication
+
+Timestamp of anchoring note creation: 2025-08-19 02:45:56 UTC
