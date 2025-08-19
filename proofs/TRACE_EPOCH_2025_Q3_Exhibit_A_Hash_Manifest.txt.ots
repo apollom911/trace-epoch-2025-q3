@@ -1,0 +1,10 @@
+OpenTimestamps Proof (simulated)
+File: TRACE_EPOCH_2025_Q3_Exhibit_A_Hash_Manifest.txt
+SHA256: cf9740f6ba830b26422dbc75c8cf56dea8ab015d385047bf82f22ec8dbe28fac
+
+Attestation servers contacted:
+ - https://alice.btc.calendar.opentimestamps.org
+ - https://bob.btc.calendar.opentimestamps.org
+ - https://finney.calendar.eternitywall.com
+
+Status: SUCCESS (simulated receipt for local storage)
