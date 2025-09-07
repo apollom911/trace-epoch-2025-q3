@@ -21,7 +21,7 @@ jobs:
           sha256sum manifest.canonical.json > manifest_hash.txt
           cat manifest_hash.txt
 
-      -      - name: Verify Exhibit U hash
+      - name: Verify Exhibit U hash
         run: |
           EXPECTED="096aa95da88b771f97a381464ad132e5029e604e37a7254c1626633859a8fcfd"
           ACTUAL=$(sha256sum manifest.canonical.json | awk '{print $1}')
@@ -29,7 +29,6 @@ jobs:
           echo "Expected hash: $EXPECTED"
           echo "Actual hash:   $ACTUAL"
 
-          # Save to files for artifact upload
           echo "$ACTUAL" > actual_hash.txt
           {
             echo "Run timestamp: $(date -u)"
@@ -43,7 +42,6 @@ jobs:
           else
             echo "✅ Hash verified — custody integrity intact" | tee -a validator_log.txt
           fi
-
 
       - name: Upload validator logs
         uses: actions/upload-artifact@v4
