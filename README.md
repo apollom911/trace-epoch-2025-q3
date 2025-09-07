@@ -9,23 +9,22 @@
 - **Ignition Date (UTC):** 2025-09-07T07:33:40Z  
 - **Public Anchor:** [Substack Launch Post](https://apollom911.substack.com/p/trace-epoch-ignition-ver-pub-002)  
 - **Hash Anchor (Exhibit U):**  
-  `096aa95da88b771f97a381464ad132e5029e604e37a7254c1626633859a8fcfd`  
+  `096aa95da88b771f97a381464ad132e5029e604e37a7254c1626633859a8fcfd`
 
 ---
 
 ## Repository Contents
 
-- **`manifest.canonical.json`** — machine-readable ignition record (custody + lineage).  
-- **`VER-PUB-002.md`** — human-readable ignition capsule (Disclaimer Seal + Ignition Spine).  
-- **`proofs/`** — supporting manifests and digests.  
-- **`validators/`** — validator attestation samples.  
+- **`manifest.canonical.json`** — machine-readable ignition record.  
+- **`VER-PUB-002.md`** — human-readable ignition capsule.  
+- **`proofs/`** — supporting manifests/digests.  
+- **`validators/`** — validator attestation samples.
 
 ---
 
 ## Purpose
 
-This repository serves as the **technical proof spine** for TRACE Epoch Ignition Bundle VER-PUB-002.  
-It mirrors the public ignition anchor on Substack and provides an auditable, machine-verifiable custody record.  
+This repo is the **technical proof spine** for TRACE Epoch Ignition (VER-PUB-002). It mirrors the public ignition anchor and provides auditable, verifiable custody.
 
 ---
 
