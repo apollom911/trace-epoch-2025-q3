@@ -25,17 +25,11 @@ jobs:
         run: |
           EXPECTED="096aa95da88b771f97a381464ad132e5029e604e37a7254c1626633859a8fcfd"
           ACTUAL=$(sha256sum manifest.canonical.json | awk '{print $1}')
-
-          echo "Expected hash: $EXPECTED"
-          echo "Actual hash:   $ACTUAL"
-
-          echo "$ACTUAL" > actual_hash.txt
           {
             echo "Run timestamp: $(date -u)"
             echo "Expected hash: $EXPECTED"
             echo "Actual hash:   $ACTUAL"
           } >> validator_log.txt
-
           if [ "$EXPECTED" != "$ACTUAL" ]; then
             echo "❌ Hash mismatch — custody integrity broken" | tee -a validator_log.txt
             exit 1
@@ -50,4 +44,3 @@ jobs:
           path: |
             manifest_hash.txt
             validator_log.txt
-            actual_hash.txt
