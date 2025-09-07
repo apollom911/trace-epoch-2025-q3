@@ -1,0 +1,21 @@
+{
+  "project": "TRACE Epoch",
+  "name": "VER-PUB-002",
+  "type": "Ignition Bundle",
+  "author": {
+    "name": "Rommel Wong",
+    "credential_id": "TRACE–CRED–ROMMEL–01",
+    "contact": "rommel@traceepoch.org"
+  },
+  "ignition_date": "2025-09-07T07:33:40Z",
+  "ssrn": {
+    "abstract_id": "5452794",
+    "doi": "10.2139/ssrn.5452794",
+    "status": "pending_distribution"
+  },
+  "anchors": {
+    "substack": "https://apollom911.substack.com/p/trace-epoch-ignition-ver-pub-002",
+    "github": "https://github.com/apollom911/trace-epoch-2025-q3"
+  },
+  "exhibit_u_hash": "096aa95da88b771f97a381464ad132e5029e604e37a7254c1626633859a8fcfd"
+}
