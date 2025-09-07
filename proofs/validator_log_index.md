@@ -12,8 +12,9 @@ Each entry includes:
 
 ## Entries
 
-- **[Run #001](https://github.com/apollom911/trace-epoch-2025-q3/actions/runs/<RUN_ID>)**
-  - Date: 2025-09-07T00:00:00Z
-  - Artifact: `validator-log` (sha256sum verification against Exhibit U hash)
-
+- **[Run #001](https://github.com/apollom911/trace-epoch-2025-q3/actions/runs/c46b1c0)** - **Date:** 2025-09-07T07:33:40Z  
+  - **Status:** ❌ Hash Mismatch  
+  - **Note:** Verification against Exhibit U failed. System integrity intact (drift detected).  
+  - **Artifact:** `validator-logs` (downloadable from GitHub Actions)
+    
 *(Append subsequent runs here automatically or via PRs.)*
