@@ -16,5 +16,11 @@ Each entry includes:
   - **Status:** ❌ Hash Mismatch  
   - **Note:** Verification against Exhibit U failed. System integrity intact (drift detected).  
   - **Artifact:** `validator-logs` (downloadable from GitHub Actions)
-    
+
+- **Run #002** *(placeholder — pending next validator execution)*  
+  - **Date:** [to be filled]  
+  - **Status:** [awaiting]  
+  - **Note:** [pending]  
+  - **Artifact:** [pending]  
+
 *(Append subsequent runs here automatically or via PRs.)*
