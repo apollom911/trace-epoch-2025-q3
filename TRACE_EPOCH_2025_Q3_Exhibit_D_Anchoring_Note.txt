@@ -1,22 +1,12 @@
-TRACE Epoch · Exhibit D — Anchoring Note
+TRACE Epoch · Exhibit D – Anchoring Note (TEMPLATE)
 
 Purpose:
-This Anchoring Note records the public blockchain transaction that immutably 
-anchors the Exhibit A Hash Manifest. It proves that the manifest and its SIM-01 
-through SIM-17 hashes existed as of the block timestamp, ensuring temporal integrity.
+This template records the public blockchain transaction that will immutably
+anchor an Exhibit A Hash Manifest. To be filled with specific values when
+anchoring is executed.
 
-SHA256(manifest) = cf9740f6ba830b26422dbc75c8cf56dea8ab015d385047bf82f22ec8dbe28fac
-
-Anchored via: [Blockchain/medium of record]
-TXID: _______________________________
-Block timestamp (UTC): ______________________________________________________
-
-Anchored via [Blockchain: Bitcoin / Ethereum / Other] 
-TXID: __________________________
-
-Block timestamp (UTC): __________________________
-
-Notes:
-- The TXID provides an immutable, publicly verifiable reference.
-- Anyone may hash the Exhibit A manifest and confirm it matches the on-chain 
-  value, ensuring integrity against the original publication date.
+Fields to fill:
+- SHA256(manifest) = ___________________________
+- Anchored via: ________________________________
+- TXID: _______________________________________
+- Block timestamp (UTC): _______________________
