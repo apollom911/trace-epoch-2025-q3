@@ -12,8 +12,8 @@ Each entry includes:
 
 ## Entries
 
-- **[Run #001](https://github.com/apollom911/trace-epoch-2025-q3/actions/runs/<RUN_ID>)**  
-  - Date: 2025-09-07T00:00:00Z  
+- **[Run #001](https://github.com/apollom911/trace-epoch-2025-q3/actions/runs/<RUN_ID>)**
+  - Date: 2025-09-07T00:00:00Z
   - Artifact: `validator-log` (sha256sum verification against Exhibit U hash)
 
 *(Append subsequent runs here automatically or via PRs.)*
