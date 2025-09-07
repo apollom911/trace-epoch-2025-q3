@@ -49,3 +49,12 @@ If mirrored to Zenodo or OSF:
 
 Zenodo will mint its own DOI (e.g., `10.5281/zenodo.xxxxxx`), which should be cross-linked in `metadata.json` → `anchors.archive`.
 
+---
+
+## Validator Update
+
+- **[Run #001](https://github.com/apollom911/trace-epoch-2025-q3/actions/runs/c46b1c0)** (2025-09-07T07:33:40Z) completed with ❌ Hash Mismatch.  
+  Drift was detected, confirming custody integrity remains intact.  
+  Artifact: `validator-logs` downloadable from GitHub Actions.
+
+- **Run #002** is staged in `validator_log_index.md` for the next execution.
