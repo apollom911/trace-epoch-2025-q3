@@ -37,8 +37,10 @@ jobs:
             echo "✅ Hash verified — custody integrity intact" | tee -a validator_log.txt
           fi
 
-      - name: Upload validator log artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload validator logs
+        uses: actions/upload-artifact@v3
         with:
-          name: validator-log
-          path: validator_log.txt
+          name: validator-logs
+          path: |
+            manifest_hash.txt
+            validator_log.txt
