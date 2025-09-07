@@ -1,0 +1,44 @@
+name: Manifest Verification
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Calculate SHA-256 of manifest
+        run: |
+          echo "Computing SHA-256 for manifest.canonical.json..."
+          sha256sum manifest.canonical.json > manifest_hash.txt
+          cat manifest_hash.txt
+
+      - name: Verify Exhibit U hash
+        run: |
+          EXPECTED="096aa95da88b771f97a381464ad132e5029e604e37a7254c1626633859a8fcfd"
+          ACTUAL=$(sha256sum manifest.canonical.json | awk '{print $1}')
+          {
+            echo "Run timestamp: $(date -u)"
+            echo "Expected hash: $EXPECTED"
+            echo "Actual hash:   $ACTUAL"
+          } >> validator_log.txt
+          if [ "$EXPECTED" != "$ACTUAL" ]; then
+            echo "❌ Hash mismatch — custody integrity broken" | tee -a validator_log.txt
+            exit 1
+          else
+            echo "✅ Hash verified — custody integrity intact" | tee -a validator_log.txt
+          fi
+
+      - name: Upload validator log artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: validator-log
+          path: validator_log.txt
