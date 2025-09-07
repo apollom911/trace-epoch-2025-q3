@@ -1,3 +1,18 @@
+# TRACE Epoch — VER-PUB-002 | Ignition Spine
+
+[![DOI](https://img.shields.io/badge/DOI-10.2139%2Fssrn.5452794-blue)](https://doi.org/10.2139/ssrn.5452794)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Build Status](https://github.com/apollom911/trace-epoch-2025-q3/actions/workflows/manifest-verify.yml/badge.svg)](https://github.com/apollom911/trace-epoch-2025-q3/actions/workflows/manifest-verify.yml)
+
+---
+
+### Public Anchors
+- [Substack Ignition](https://apollom911.substack.com/p/trace-epoch-ignition-ver-pub-002)
+- [SSRN (DOI pending)](https://doi.org/10.2139/ssrn.5452794)
+- [GitHub Repo](https://github.com/apollom911/trace-epoch-2025-q3)
+
+---
+
 # TRACE Epoch — Ignition Spine (VER-PUB-002)
 
 ---
